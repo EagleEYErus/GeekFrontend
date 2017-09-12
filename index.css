@@ -467,3 +467,116 @@ nav {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
 }
+
+@media screen and (max-width: 1600px) {
+  .subscribe {
+    width: 100%;
+  }
+
+  .info {
+    left: 12%;
+    top: 22%;
+  }
+
+  .subscribe-text {
+    top: 22%;
+    right: 22%;
+  }
+
+  .email-container {
+    top: 50%;
+    right: 14%;
+  }
+}
+
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1099px;
+  margin: 109px auto 89px auto;
+}
+
+.shop-info {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+}
+
+.logo {
+  display: flex;
+  height: 51px;
+}
+
+.about-text {
+  margin-top: 29px;
+}
+
+.about {
+  font-family: Lato;
+  color:#898989;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.about-title {
+  font-family: Lato;
+  color:#f16d7f;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 26px;
+  /* Приближение из-за подстановки шрифтов */
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+
+.about-links a {
+  font-family: Lato;
+  color:
+  #898989;
+  font-size: 16px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 42px;/* Приближение из-за подстановки шрифтов */
+  text-decoration: none;
+}
+
+footer {
+  background-color:#e6e6e6;
+  height: 79px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  font-family: Lato;
+  color:#7a7a7a;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 42px;
+  /* Приближение из-за подстановки шрифтов */
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social-network {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-network:hover {
+  background-color: #f16d7f;
+}
