@@ -307,10 +307,88 @@ nav {
   height: 7px;
 }
 
-.advertising {
-  margin-top: 113px;
+.adversiting {
+  margin: 113px auto 0 auto;
+  position: relative;
+  width: 1140px;
+}
+
+.adversiting-image {
+  position: absolute;
+  top: 0;
+}
+
+.adversiting-text {
+  position: absolute;
+  top: 146px;
+  left: 39px;
+}
+
+.adversiting-percent {
+  text-transform: uppercase;
+  font-family: Lato;
+  color:#ffffff;
+  font-size: 53.62px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+}
+
+.adversiting-description {
+  text-transform: uppercase;
+  font-family: Lato;
+  color:#ffffff;
+  font-size: 32.17px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+}
+
+.adversiting-offer {
+  font-family: Lato;
+  color:#f16d7f;
+  font-size: 53.62px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+}
+
+.adversiting-about-icons {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  top: 48px;
+  right: 292px;
+  height: 345px;
+  justify-content: space-between;
+}
+.adversiting-about {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 45px;
+  right: 43px;
+  width: 219px;
+  height: 450px;
+}
+
+.adversiting-about h2 {
+  font-family: Lato;
+  color:#fbfbfb;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+}
+
+.adversiting-about article {
+  font-family: Lato;
+  color: #fbfbfb;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
 }
 
 .subscribe {
