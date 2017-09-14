@@ -399,6 +399,12 @@ nav {
   width: 1600px;
 }
 
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .center-delimiter {
   background-color: #ffffff;
   width: 1px;
