@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<title>Shop</title>
@@ -19,9 +21,30 @@
 			<a href="#">
 				<p class="brand">BRAN<span class="brand-red">D</span></p>
 			</a>
-			<button class="drop-down">
-				Browse <img src="img/browse-arrow.png" alt="">
-			</button>
+			<div class="dropdown">
+				<button class="dropdown-toggle drop-down" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p>Browse</p></button>
+				<div class="dropdown-menu drop-down-menu">
+					<h3 class="dropdown-header">Women</h3>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Dresses</a>
+					<a class="dropdown-item" href="#">Tops</a>
+					<a class="dropdown-item" href="#">Sweaters/Knits</a>
+					<a class="dropdown-item" href="#">Jackets/Coats</a>
+					<a class="dropdown-item" href="#">Blazers</a>
+					<a class="dropdown-item" href="#">Denim</a>
+					<a class="dropdown-item" href="#">Leggings/Pants</a>
+					<a class="dropdown-item" href="#">Skirts/Shorts</a>
+					<a class="dropdown-item" href="#">Accesories</a>
+					<h3 class="dropdown-header">Men</h3>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Tees/Tank tops</a>
+					<a class="dropdown-item" href="#">Shirts/Polos</a>
+					<a class="dropdown-item" href="#">Sweaters</a>
+					<a class="dropdown-item" href="#">Sweatshirts/Hoodies</a>
+					<a class="dropdown-item" href="#">Blazers</a>
+					<a class="dropdown-item" href="#">Jackets/vests</a>
+				</div>
+			</div>
 			<input type="text" name="search" id="search-field" placeholder="Search for Item...">
 			<button class="search-button">
 				<img src="img/search.jpg" alt="">
@@ -35,7 +58,7 @@
 	<nav>
 		<ul class="menu">
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Man</a></li>
+			<li><a href="./product.html">Man</a></li>
 			<li><a href="#">Women</a></li>
 			<li><a href="#">Kids</a></li>
 			<li><a href="#">Accesories</a></li>
@@ -48,7 +71,7 @@
 	</div>
 	<div class="offers">
 		<div class="for-men">
-			<a href="#">
+			<a href="./product.html">
 				<div class="stock">
 					<span class="offer">hot deal</span>
 					<br>
@@ -366,6 +389,13 @@
 			</a>
 		</div>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	 crossorigin="anonymous"></script>
 </body>
 
 </html>

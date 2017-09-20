@@ -4,7 +4,7 @@ $content-width: 1150px;
   background-color: #f8f3f4;
   height: 148px;
   display: flex;
-  align-items: center;
+	align-items: center;
 }
 
 .arrival-container {
@@ -35,53 +35,83 @@ $content-width: 1150px;
     font-family: Lato;
     color: #f16d7f;
     font-size: 14px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 20px;
-    /* Приближение из-за подстановки шрифтов */
   }
 }
 
 .content {
-	width: $content-width;
-	display: flex;
-	margin: 59px auto 0;
-	justify-content: space-between;
+  width: $content-width;
+  display: flex;
+  margin: 59px auto 0;
+  justify-content: space-between;
 }
 
 .categories {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .categories-menu {
   width: 243px;
   height: 37px;
-  margin-bottom: 18px;
+  margin-top: 18px;
   border-bottom: 1px solid #ebebeb;
-	box-sizing: border-box;
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &:first-child {
+    margin: 0;
+  }
   p {
     font-family: Lato;
     color: #6f6e6e;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-		text-transform: uppercase;
-		margin-left: 16px;
+    text-transform: uppercase;
+    margin-left: 16px;
   }
+  i {
+    transition: transform .5s;
+    color: rgb(112, 110, 111);
+  }
+  // &:hover {
+  //   p {
+  //     color: #ef5b70;
+  //   }
+  //   i {
+  //     transform: rotate(180deg);
+  //     color: #ef5b70;
+	// 	}
+  // }
 }
 
 .border {
-	position: absolute;
-	left: 0;
-	top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-color: #ef5b70;
   width: 5px;
   height: 37px;
+}
+
+.category-items {
+  display: none;
+  margin: 22px 0 0 17px;
+  a {
+    text-decoration: none;
+  }
+  li {
+    font-family: Lato;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+  }
 }
 
 .products {}
