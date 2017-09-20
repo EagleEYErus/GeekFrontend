@@ -198,6 +198,8 @@ nav {
 .categories {
   display: flex;
   flex-direction: column; }
+  .categories a {
+    text-decoration: none; }
 
 .categories-menu {
   width: 243px;
@@ -208,8 +210,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer; }
+  align-items: center; }
   .categories-menu:first-child {
     margin: 0; }
   .categories-menu p {
@@ -221,7 +222,6 @@ nav {
     text-transform: uppercase;
     margin-left: 16px; }
   .categories-menu i {
-    transition: transform .5s;
     color: #706e6f; }
 
 .border {
@@ -233,7 +233,6 @@ nav {
   height: 37px; }
 
 .category-items {
-  display: none;
   margin: 22px 0 0 17px; }
   .category-items a {
     text-decoration: none; }
