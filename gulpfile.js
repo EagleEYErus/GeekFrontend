@@ -6,11 +6,11 @@ const watch = require('gulp-watch');
 gulp.task('scss', () => {
 	const run = () => {
 		return gulp
-			.src('./scss/*.scss')
+			.src(['./scss/*.scss', '!./scss/header.scss', '!./scss/footer.scss'])
 			.pipe(plumber())
 			.pipe(sass())
 			.pipe(gulp.dest('./css'));
-	}	
+	}
 	watch('./scss/*.scss', run);
 
 	return run();
