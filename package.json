@@ -1,6 +1,14 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
+  "name": "geek-frontend",
+  "description": "GeekUnivercity Frontend",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EagleEYErus/GeekFrontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EagleEYErus/GeekFrontend/issues"
+  },
   "author": {
     "name": "Saprykin Alexander"
   },
