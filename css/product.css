@@ -244,6 +244,35 @@ nav {
     font-weight: 400;
     line-height: 33px; }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 858px;
+  min-height: 1163px;
+  margin-bottom: 43px;
+  justify-content: space-between; }
+
+.product {
+  width: 263px;
+  height: 375px; }
+  .product .product-name {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 19px 0 17px 15px; }
+  .product .price {
+    margin-left: 15px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .product:hover {
+    background-color: #fff;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16); }
+
 .subscribe {
   display: flex;
   justify-content: center;

@@ -2,6 +2,9 @@
   "name": "geek-frontend",
   "description": "GeekUnivercity Frontend",
   "version": "0.1.0",
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EagleEYErus/GeekFrontend.git"
