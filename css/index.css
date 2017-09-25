@@ -237,7 +237,13 @@ nav {
 .item {
   display: flex;
   height: 364px;
-  position: relative; }
+  position: relative;
+  transition: box-shadow .5s; }
+  .item:hover {
+    background-color: #fff;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16); }
+  .item a {
+    text-decoration: none; }
 
 .thinner {
   opacity: 0;
@@ -253,7 +259,8 @@ nav {
   -o-transition: prop time;
   transition: all 0.2s;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transition: opacity .5s; }
   .thinner:hover {
     opacity: 0.7; }
 
@@ -272,13 +279,6 @@ nav {
   color: #ffffff;
   font-size: 13px;
   font-weight: 700; }
-
-.item:hover {
-  background-color: #fff;
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16); }
-
-.item a {
-  text-decoration: none; }
 
 .item-title {
   font-family: Lato;
@@ -570,6 +570,8 @@ nav {
   font-weight: 400;
   line-height: 42px;
   text-decoration: none; }
+  .about-links a:hover {
+    color: #f16d7f; }
 
 footer {
   background-color: #e6e6e6;
@@ -599,6 +601,7 @@ footer {
   margin-right: 8px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: background-color .5s; }
   .social-network:hover {
     background-color: #f16d7f; }
