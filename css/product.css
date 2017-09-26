@@ -146,9 +146,8 @@ nav {
   .menu li {
     padding-bottom: 4px; }
     .menu li:hover {
-      border-bottom: 4px solid;
-      padding-bottom: 0;
-      border-color: #ef5b70; }
+      border-bottom: 4px solid #ef5b70;
+      padding-bottom: 0; }
 
 .active {
   border-bottom: 4px solid;
@@ -201,10 +200,6 @@ nav {
   flex-direction: column; }
   .categories a {
     text-decoration: none; }
-    .categories a:hover p {
-      color: #ef5b70; }
-    .categories a:hover i {
-      color: #ef5b70; }
 
 .categories-menu {
   width: 243px;
