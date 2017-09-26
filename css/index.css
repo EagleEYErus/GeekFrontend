@@ -160,7 +160,7 @@ nav {
 
 .offers {
   position: relative;
-  width: 1140px;
+  width: 1150px;
   margin: 0 auto;
   margin-top: 96px;
   height: 823px; }
@@ -320,7 +320,7 @@ nav {
 .adversiting {
   margin: 113px auto 97px auto;
   position: relative;
-  width: 1140px; }
+  width: 1150px; }
 
 .adversiting-image {
   position: absolute;
@@ -530,7 +530,7 @@ nav {
 .pre-footer {
   display: flex;
   justify-content: space-between;
-  width: 1099px;
+  width: 1150px;
   margin: 109px auto 89px auto; }
 
 .shop-info {
@@ -575,10 +575,15 @@ nav {
 footer {
   background-color: #e6e6e6;
   height: 79px;
-  width: 100%;
+  width: 100%; }
+
+.footer-content {
+  max-width: 1150px;
+  height: 79px;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
 
 .copyright {
   font-family: Lato;

@@ -1,4 +1,5 @@
 @import "./header";
+$content-width: 1150px;
 .slider {
   display: flex;
   justify-content: center;
@@ -6,7 +7,7 @@
 
 .offers {
   position: relative;
-  width: 1140px;
+  width: $content-width;
   margin: 0 auto;
   margin-top: 96px;
   height: 823px;
@@ -188,7 +189,7 @@
 .adversiting {
   margin: 113px auto 97px auto;
   position: relative;
-  width: 1140px;
+  width: $content-width;
 }
 
 .adversiting-image {

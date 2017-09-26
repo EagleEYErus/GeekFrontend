@@ -1,3 +1,4 @@
+$content-width: 1150px;
 header {
   display: flex;
   border-style: solid;
@@ -13,7 +14,7 @@ header {
   display: flex;
   margin: 0 auto;
   align-self: center;
-  width: 1150px;
+  width: $content-width;
   height: 51px;
   align-items: center;
   a {
