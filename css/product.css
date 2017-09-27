@@ -51,7 +51,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .drop-down p {
+  .drop-down span {
     font-family: Lato;
     color: #222222;
     font-size: 14px;
@@ -235,15 +235,14 @@ header {
 .category-items {
   margin: 22px 0 0 17px; }
   .category-items a {
-    text-decoration: none; }
-  .category-items li {
+    display: block;
     font-family: Lato;
     color: #6f6e6e;
     font-size: 14px;
     font-weight: 400;
     line-height: 33px; }
-    .category-items li:hover {
-      color: #ef5b70; }
+  .category-items li:hover a {
+    color: #ef5b70; }
 
 .products {
   display: flex;
