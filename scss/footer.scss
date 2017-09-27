@@ -11,6 +11,9 @@ $content-width: 1150px;
   position: absolute;
   left: 0;
   top: 0;
+  img {
+    height: 100%;
+  }
 }
 
 .center-delimiter {

@@ -347,6 +347,8 @@ header {
   position: absolute;
   left: 0;
   top: 0; }
+  .overlay img {
+    height: 100%; }
 
 .center-delimiter {
   background-color: #ffffff;
