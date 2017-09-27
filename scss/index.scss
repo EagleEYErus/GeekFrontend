@@ -8,8 +8,7 @@ $content-width: 1150px;
 .offers {
   position: relative;
   width: $content-width;
-  margin: 0 auto;
-  margin-top: 96px;
+  margin: 96px auto 0;
   height: 823px;
 }
 
@@ -113,11 +112,6 @@ $content-width: 1150px;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: prop time;
-  -moz-transition: prop time;
-  -ms-transition: prop time;
-  -o-transition: prop time;
-  transition: all 0.2s;
   display: flex;
   justify-content: center;
   transition: opacity .5s;
@@ -176,9 +170,8 @@ $content-width: 1150px;
   font-weight: 400;
   line-height: 32px;
   display: flex;
-  margin: 0 auto;
+  margin: 58px auto 0;
   justify-content: center;
-  margin-top: 58px;
   img {
     margin-left: 9px;
     align-self: center;
@@ -187,7 +180,7 @@ $content-width: 1150px;
 }
 
 .adversiting {
-  margin: 113px auto 97px auto;
+  margin: 113px auto 97px;
   position: relative;
   width: $content-width;
 }
