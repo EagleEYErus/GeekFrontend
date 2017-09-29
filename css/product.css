@@ -241,6 +241,8 @@ header {
 .filter {
   display: flex;
   justify-content: space-between; }
+  .filter .row-margin {
+    margin-bottom: 13px; }
   .filter h2 {
     color: #6f6e6e;
     font-family: Lato;

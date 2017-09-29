@@ -113,6 +113,9 @@ $content-width: 1150px;
 .filter {
   display: flex;
   justify-content: space-between;
+  .row-margin {
+    margin-bottom: 13px;
+  }
   h2 {
     color: #6f6e6e;
     font-family: Lato;
