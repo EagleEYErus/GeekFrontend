@@ -1,3 +1,5 @@
+@import "http://propeller.in/components/range-slider/css/nouislider.min.css";
+@import "http://propeller.in/components/range-slider/css/range-slider.css";
 header {
   display: flex;
   border: 1px solid #ececec;
@@ -283,8 +285,23 @@ header {
       margin-right: 9px; }
   .filter .price {
     width: 250px; }
-    .filter .price .c-1-color {
+    .filter .price .noUi-connect,
+    .filter .price .noUi-handle::before,
+    .filter .price .noUi-handle-lower,
+    .filter .price .noUi-handle-upper,
+    .filter .price .noUi-tooltip,
+    .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip::before, .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip::before {
       background: #f16d7f; }
+    .filter .price .slider-price {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 21px; }
+      .filter .price .slider-price p {
+        color: #6f6e6e;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px; }
 
 .sort {
   min-height: 50px;

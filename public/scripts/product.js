@@ -1,28 +1,15 @@
 // SLIDE
 
-var slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
-	start: [52, 400],
-	connect: [false, true, false],
+var pmdSliderRange = document.getElementById('pmd-slider-range');
+noUiSlider.create(pmdSliderRange, {
+	start: [100, 300],
+	connect: true,
+	tooltips: [ wNumb({ decimals: 0 }), wNumb({ decimals: 0 }) ],
 	range: {
-		'min': [52],
-		'max': [400]
-	},
-	pips: {
-		mode: 'positions',
-		values: [0,100],
-		density: 100
+		'min': 52,
+		'max': 400
 	}
 });
-
-var connect = slider.querySelectorAll('.noUi-connect');
-var classes = ['c-1-color'];
-
-for (var i = 0; i < connect.length; i++) {
-	connect[i].classList.add(classes[i]);
-}
-
 
 // CATEGORIES
 
