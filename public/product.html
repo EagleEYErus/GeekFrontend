@@ -9,12 +9,13 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/product.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css">
 	<title>Product</title>
 </head>
 
 <body>
 	<header>
-		<div class="container">
+		<div class="header-container">
 			<a href="./index.html">
 				<img src="img/logo.jpg" alt="">
 			</a>
@@ -125,7 +126,42 @@
 		</div>
 		<div class="products-container">
 			<div class="filter">
-
+				<div class="trending">
+					<h2>Trending now</h2>
+					<div class="container">
+						<div class="row justify-content-between trending-items">
+							<a href="#" class="col-5">Bohemian</a>
+							<a href="#" class="col-4 bordered">Floral</a>
+							<a href="#" class="col-3">Lace</a>
+						</div>
+						<div class="row justify-content-between trending-items">
+							<a href="#" class="col-4">Floral</a>
+							<a href="#" class="col-3 bordered">Lace</a>
+							<a href="#" class="col-5">Bohemian</a>
+						</div>
+					</div>
+				</div>
+				<div class="size">
+					<h2>Size</h2>
+					<div class="container">
+						<div class="row justify-content-between">
+							<label class="col-2"><input type="checkbox" name="xxs" id="">xxs</label>
+							<label class="col-2"><input type="checkbox" name="xs" id="">xs</label>
+							<label class="col-2"><input type="checkbox" name="s" id="">s</label>
+							<label class="col-2"><input type="checkbox" name="m" id="">m</label>
+						</div>
+						<div class="row justify-content-between">
+							<label class="col-2"><input type="checkbox" name="l" id="">l</label>
+							<label class="col-2"><input type="checkbox" name="xl" id="">xl</label>
+							<label class="col-2"><input type="checkbox" name="xxl" id="">xxl</label>
+							<div class="col-2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="price">
+					<h2>Price</h2>
+					<div id="slider"></div>
+				</div>
 			</div>
 			<div class="sort">
 				<div class="sorting">
@@ -153,66 +189,210 @@
 			<div class="products">
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-1.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-1.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-2.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-2.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-3.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-3.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-4.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-4.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-5.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-5.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-6.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-6.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-7.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-7.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-8.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-8.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 				<div class="product">
 					<a href="#">
-					<img src="./img/product-9.png" alt="">
-					<p class="product-name">Mango people t-shirt</p>
-					<p class="price">$52.00</p>
-				</a>
+						<div class="thinner">
+							<div class="thinner-container">
+								<a class="thinner-cart" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>								
+									<p class="thinner-text">Add to Cart</p>
+								</a>
+								<div class="thinner-social">
+									<a class="thinner-retweet" href="#">
+										<i class="fa fa-retweet" aria-hidden="true"></i>
+									</a>
+									<a class="thinner-like" href="#">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img src="./img/product-9.png" alt="">
+						<p class="product-name">Mango people t-shirt</p>
+						<p class="price">$52.00</p>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -381,6 +561,7 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
 	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.js"></script>
 	<script src="./scripts/product.js"></script>
 </body>
 

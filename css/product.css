@@ -6,14 +6,14 @@ header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
   height: 100px; }
 
-.container {
+.header-container {
   display: flex;
   margin: 0 auto;
   align-self: center;
   width: 1150px;
   height: 51px;
   align-items: center; }
-  .container a {
+  .header-container a {
     text-decoration: none; }
 
 .brand {
@@ -238,9 +238,56 @@ header {
 .products-container {
   margin-left: 49px; }
 
+.filter {
+  display: flex;
+  justify-content: space-between; }
+  .filter h2 {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 24px; }
+  .filter .trending {
+    width: 177px; }
+    .filter .trending .bordered {
+      border-right: 1px solid #6f6e6e;
+      border-left: 1px solid #6f6e6e; }
+    .filter .trending .trending-items > a {
+      color: #6f6e6e;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-decoration: none;
+      padding: 0;
+      text-align: center; }
+      .filter .trending .trending-items > a:hover {
+        color: #f16d7f; }
+  .filter .size {
+    width: 235px; }
+    .filter .size label {
+      display: flex;
+      align-items: center;
+      color: #6f6e6e;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-transform: uppercase;
+      padding: 0; }
+    .filter .size input {
+      margin-right: 9px; }
+  .filter .price {
+    width: 250px; }
+    .filter .price .c-1-color {
+      background: #f16d7f; }
+
 .sort {
   min-height: 50px;
   background-color: #f3f3f3;
+  margin-top: 42px;
   margin-bottom: 48px;
   display: flex;
   align-items: center; }
@@ -267,6 +314,7 @@ header {
       font-size: 14px;
       font-weight: 400;
       line-height: 26px;
+      height: 28px;
       margin-left: -1px;
       display: flex;
       align-items: center;
@@ -293,7 +341,84 @@ header {
 .product {
   width: 263px;
   height: 375px;
-  transition: box-shadow .5s; }
+  transition: box-shadow .5s;
+  position: relative; }
+  .product .thinner {
+    opacity: 0;
+    background-color: rgba(58, 56, 56, 0.83);
+    width: 263px;
+    height: 281px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity .5s; }
+    .product .thinner:hover {
+      opacity: 0.7; }
+    .product .thinner .thinner-container {
+      width: 123px;
+      height: 78px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      margin-top: 35%; }
+      .product .thinner .thinner-container .thinner-cart {
+        border: 1px solid #ffffff;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #fff;
+        width: 100%;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 7px;
+        transition: all .5s; }
+        .product .thinner .thinner-container .thinner-cart i {
+          transform: scale(1.5); }
+        .product .thinner .thinner-container .thinner-cart .thinner-text {
+          font-family: Lato;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 700;
+          transition: color .5s; }
+        .product .thinner .thinner-container .thinner-cart:hover {
+          color: #f16d7f;
+          border: 1px solid #f16d7f; }
+          .product .thinner .thinner-container .thinner-cart:hover p {
+            color: #f16d7f; }
+      .product .thinner .thinner-container .thinner-social {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .product .thinner .thinner-container .thinner-social a {
+          transition: all 0.5s; }
+        .product .thinner .thinner-container .thinner-social .thinner-retweet {
+          border: 1px solid #ffffff;
+          border-radius: 3px;
+          box-sizing: border-box;
+          width: 47%;
+          height: 39px;
+          display: flex;
+          align-items: center;
+          margin-top: 35%;
+          justify-content: space-around;
+          color: #fff; }
+        .product .thinner .thinner-container .thinner-social .thinner-like {
+          border: 1px solid #ffffff;
+          border-radius: 3px;
+          box-sizing: border-box;
+          width: 47%;
+          height: 39px;
+          display: flex;
+          align-items: center;
+          margin-top: 35%;
+          justify-content: space-around;
+          color: #fff; }
+        .product .thinner .thinner-container .thinner-social a:hover {
+          color: #f16d7f;
+          border: 1px solid #f16d7f; }
   .product .product-name {
     color: #6f6e6e;
     font-family: Lato;
