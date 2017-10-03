@@ -1,2 +1,0 @@
-# GeekFrontend
-GeekUniversity Courses
