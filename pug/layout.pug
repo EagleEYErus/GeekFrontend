@@ -1,0 +1,167 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+		link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+		link(rel='stylesheet', type='text/css', href='../css/reset.css')
+		block css
+		title Shop
+	body
+		header
+			.header-container
+				a(href='#')
+					img(src='img/logo.jpg', alt='')
+				a(href='#')
+					p.brand
+						| BRAN
+						span.brand-red D
+				.dropdown
+					button.dropdown-toggle.drop-down(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						span Browse
+					.dropdown-menu.drop-down-menu
+						h3.dropdown-header Women
+						.dropdown-divider
+						a.dropdown-item(href='#') Dresses
+						a.dropdown-item(href='#') Tops
+						a.dropdown-item(href='#') Sweaters/Knits
+						a.dropdown-item(href='#') Jackets/Coats
+						a.dropdown-item(href='#') Blazers
+						a.dropdown-item(href='#') Denim
+						a.dropdown-item(href='#') Leggings/Pants
+						a.dropdown-item(href='#') Skirts/Shorts
+						a.dropdown-item(href='#') Accesories
+						h3.dropdown-header Men
+						.dropdown-divider
+						a.dropdown-item(href='#') Tees/Tank tops
+						a.dropdown-item(href='#') Shirts/Polos
+						a.dropdown-item(href='#') Sweaters
+						a.dropdown-item(href='#') Sweatshirts/Hoodies
+						a.dropdown-item(href='#') Blazers
+						a.dropdown-item(href='#') Jackets/vests
+				input#search-field(type='text', name='search', placeholder='Search for Item...')
+				button.search-button
+					img(src='img/search.jpg', alt='')
+				a.cart(href='')
+					img(src='img/cart.jpg', alt='')
+				button.account
+					| My Account 
+					img(src='img/account-arrow.png', alt='')
+		nav.navigation-bar
+			ul.menu
+				li
+					a(href='#') Home
+				li
+					a(href='./product.html') Man
+				li
+					a(href='#') Women
+				li
+					a(href='#') Kids
+				li
+					a(href='#') Accesories
+				li
+					a(href='#') Featured
+				li
+					a(href='#') Hot deals
+		block content
+		.subscribe
+			img(src='img/subscribe.jpg', alt='')
+			.overlay
+				img(src='img/subscribe-overlay.png', alt='')
+			.center-delimiter
+			.info
+				img(src='img/subscribe-photo.png', alt='')
+				p.info-text
+					| "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque
+					| sed pretium"
+				.contact
+					p.info-name Bin Burhan
+					p.info-signature Dhaka, Bd
+					.slider-bar
+						div
+						.active
+						div
+			.subscribe-text
+				p.subscribe-title subscribe
+				p.subscribe-description for our newsletter and promotion
+			.email-container
+				input#subscribe-email(type='email', name='email', placeholder='Enter Your Email')
+				button.subscribe-button Subscribe
+		.pre-footer
+			.shop-info
+				.logo
+					img(src='img/logo.jpg', alt='')
+					p.brand
+						| BRAN
+						span.brand-red D
+				.about-text
+					p.about
+						| Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary
+						| materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+					br
+					p.about
+						| Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless
+						| technologies. Dynamically optimize.
+			nav.about-links
+				h2.about-title Company
+				ul
+					li
+						a(href='#') Home
+					li
+						a(href='#') Shop
+					li
+						a(href='#') About
+					li
+						a(href='#') How It Works
+					li
+						a(href='#') Contact
+			nav.about-links
+				h2.about-title Information
+				ul
+					li
+						a(href='#') Tearms &amp; Condition
+					li
+						a(href='#') Privacy Policy
+					li
+						a(href='#') How to Buy
+					li
+						a(href='#') How to Sell
+					li
+						a(href='#') Promotion
+			nav.about-links
+				h2.about-title Shop Category
+				ul
+					li
+						a(href='#') Men
+					li
+						a(href='#') Women
+					li
+						a(href='#') Child
+					li
+						a(href='#') Apparel
+					li
+						a(href='#') Browse All
+		footer
+			.footer-content
+				p.copyright © 2017 Brand All Rights Reserved.
+				.social-networks
+					a(href='#')
+						.social-network
+							i.fa.fa-facebook(aria-hidden='true')
+					a(href='#')
+						.social-network
+							i.fa.fa-twitter(aria-hidden='true')
+					a(href='#')
+						.social-network
+							i.fa.fa-linkedin(aria-hidden='true')
+					a(href='#')
+						.social-network
+							i.fa.fa-pinterest-p(aria-hidden='true')
+					a(href='#')
+						.social-network
+							i.fa.fa-google-plus(aria-hidden='true')
+		script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+		block scripts

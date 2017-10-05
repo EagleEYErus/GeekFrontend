@@ -290,7 +290,8 @@ header {
     .filter .price .noUi-handle-lower,
     .filter .price .noUi-handle-upper,
     .filter .price .noUi-tooltip,
-    .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip::before, .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip::before {
+    .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip::before,
+    .filter .price .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip::before {
       background: #f16d7f; }
     .filter .price .slider-price {
       display: flex;

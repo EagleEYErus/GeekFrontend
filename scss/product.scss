@@ -1,8 +1,6 @@
 @import "./header";
-
 @import "http://propeller.in/components/range-slider/css/nouislider.min.css";
 @import "http://propeller.in/components/range-slider/css/range-slider.css";
-
 $content-width: 1150px;
 .arrivals {
   background-color: #f8f3f4;
@@ -173,7 +171,8 @@ $content-width: 1150px;
     .noUi-handle-lower,
     .noUi-handle-upper,
     .noUi-tooltip,
-    .pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip::before, .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip::before {
+    .pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip::before,
+    .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip::before {
       background: #f16d7f;
     }
     .slider-price {

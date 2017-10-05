@@ -1,0 +1,317 @@
+extends layout
+
+block css
+	link(rel='stylesheet', type='text/css', href='../css/product.css')
+block content
+	.content
+		.categories
+			a.categories-menu.categories__category-items(data-toggle='collapse', href='#categoryItems', aria-expanded='true', aria-controls='categoryItems')
+				p category
+				i.fa.fa-caret-down(aria-hidden='true')
+				.border
+			#categoryItems.collapse(role='tabpanel')
+				ul.category-items
+					li
+						a(href='#') Accesories
+					li
+						a(href='#') Bags
+					li
+						a(href='#') Denim
+					li
+						a(href='#') Hoodies &amp; Sweatshirts
+					li
+						a(href='#') Jackets &amp; Coats
+					li
+						a(href='#') Pants
+					li
+						a(href='#') Polos
+					li
+						a(href='#') Shirts
+					li
+						a(href='#') Shoes
+					li
+						a(href='#') Shorts
+					li
+						a(href='#') Sweaters &amp; Knits
+					li
+						a(href='#') T-Shirts
+					li
+						a(href='#') Tanks
+			a.categories-menu.categories__brand-items(data-toggle='collapse', href='#brandItems', aria-expanded='true', aria-controls='brandItems')
+				p brand
+				i.fa.fa-caret-down(aria-hidden='true')
+				.border
+			#brandItems.collapse(role='tabpanel')
+				ul.category-items
+					li
+						a(href='#') Accesories
+					li
+						a(href='#') Bags
+					li
+						a(href='#') Denim
+					li
+						a(href='#') Hoodies &amp; Sweatshirts
+			a.categories-menu.categories__designer-items(data-toggle='collapse', href='#designerItems', aria-expanded='true', aria-controls='designerItems')
+				p designer
+				i.fa.fa-caret-down(aria-hidden='true')
+				.border
+			#designerItems.collapse(role='tabpanel')
+				ul.category-items
+					li
+						a(href='#') Shorts
+					li
+						a(href='#') Sweaters &amp; Knits
+					li
+						a(href='#') T-Shirts
+					li
+						a(href='#') Tanks
+		.products-container
+			.filter
+				.trending
+					h2 Trending now
+					.container
+						.row.row-margin.justify-content-between.trending-items
+							a.col-5(href='#') Bohemian
+							a.col-4.bordered(href='#') Floral
+							a.col-3(href='#') Lace
+						.row.justify-content-between.trending-items
+							a.col-4(href='#') Floral
+							a.col-3.bordered(href='#') Lace
+							a.col-5(href='#') Bohemian
+				.size
+					h2 Size
+					.container
+						.row.row-margin.justify-content-between
+							label.col-2
+								input(type='checkbox', name='xxs', id='')
+								| xxs
+							label.col-2
+								input(type='checkbox', name='xs', id='')
+								| xs
+							label.col-2
+								input(type='checkbox', name='s', id='')
+								| s
+							label.col-2
+								input(type='checkbox', name='m', id='')
+								| m
+						.row.justify-content-between
+							label.col-2
+								input(type='checkbox', name='l', id='')
+								| l
+							label.col-2
+								input(type='checkbox', name='xl', id='')
+								| xl
+							label.col-2
+								input(type='checkbox', name='xxl', id='')
+								| xxl
+							.col-2
+				.price
+					h2 Price
+					#pmd-slider-range.pmd-range-slider
+					.slider-price
+						p $52
+						p $400
+			.sort
+				.sorting
+					span Sort By
+					.dropdown
+						button.dropdown-toggle.sorting-button.dropdown__sort(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Name
+						.dropdown-menu.sort-menu
+							a.dropdown-item(href='#') Name
+							a.dropdown-item(href='#') Price
+				.sorting
+					span Show
+					.dropdown
+						button.dropdown-toggle.sorting-button.dropdown__show(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 09
+						.dropdown-menu.sort-menu
+							a.dropdown-item(href='#') 09
+							a.dropdown-item(href='#') 06
+							a.dropdown-item(href='#') 03
+			.products
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-1.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-2.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-3.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-4.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-5.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-6.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-7.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-8.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+				.product
+					a(href='#')
+						.thinner
+							.thinner-container
+								a.thinner-cart(href='#')
+									i.fa.fa-shopping-cart(aria-hidden='true')
+									p.thinner-text Add to Cart
+								.thinner-social
+									a.thinner-retweet(href='#')
+										i.fa.fa-retweet(aria-hidden='true')
+									a.thinner-like(href='#')
+										i.fa.fa-heart-o(aria-hidden='true')
+						img(src='./img/product-9.png', alt='')
+						p.product-name Mango people t-shirt
+						p.price $52.00
+	.product-navigation
+		ul.pagination
+			li
+				a(href='#')
+					i.fa.fa-angle-left(aria-hidden='true')
+			li
+				a(href='#') 1
+			li
+				a(href='#') 2
+			li
+				a(href='#') 3
+			li
+				a(href='#') 4
+			li
+				a(href='#') 5
+			li
+				a(href='#') 6
+			li
+				a(href='#') ...
+			li
+				a(href='#') 20
+			li
+				a(href='#')
+					i.fa.fa-angle-right(aria-hidden='true')
+		.view-all
+			button View All
+	.adversiting
+		.adversiting-icons
+			img(src='img/delivery.png', alt='')
+			img(src='img/sales.png', alt='')
+			img(src='img/assuranse.png', alt='')
+		.adversiting-about
+			div
+				h2 Free Delivery
+				br
+				p
+					| Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models.
+			div
+				h2 Sales &amp; discounts
+				br
+				p
+					| Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models.
+			div
+				h2 Quality assuranse
+				br
+				p
+					| Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models.
+
+block scripts
+	script(src="http://propeller.in/components/range-slider/js/wNumb.js")
+	script(src="http://propeller.in/components/range-slider/js/nouislider.js")
+	script(src="./scripts/product.js")

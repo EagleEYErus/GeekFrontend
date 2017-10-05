@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const pug = require('gulp-pug');
+const htmlbeautify = require('gulp-html-beautify');
 const plumber = require('gulp-plumber');
 const watch = require('gulp-watch');
 
@@ -16,4 +18,21 @@ gulp.task('scss', () => {
 	return run();
 });
 
-gulp.task('default', ['scss']);
+gulp.task('pug', () => {
+	const run = () => {
+		return gulp
+			.src(['./pug/*.pug', '!./pug/layout.pug'])
+			.pipe(plumber())
+			.pipe(pug())
+			.pipe(htmlbeautify({
+				indentSize: 2,
+				indent_with_tabs: true
+			}))
+			.pipe(gulp.dest('./public'));
+	}
+	watch('./pug/*.pug', run);
+
+	return run();
+});
+
+gulp.task('default', ['scss', 'pug']);
