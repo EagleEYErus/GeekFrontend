@@ -13,8 +13,8 @@
 
 <body>
 	<header>
-		<div class="header-container"><a href="#"><img src="img/logo.jpg" alt=""></a>
-			<a href="#">
+		<div class="header-container"><a href="/public/index.php"><img src="img/logo.jpg" alt=""></a>
+			<a href="/public/index.php">
 				<p class="brand">BRAN<span class="brand-red">D</span></p>
 			</a>
 			<div class="dropdown"><button class="dropdown-toggle drop-down" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Browse</span></button>
