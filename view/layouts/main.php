@@ -143,7 +143,6 @@ if (\components\RequestComponent::$controller === 'product') {
           <script src='http://propeller.in/components/range-slider/js/nouislider.js'></script>
           <script src='../../web/js/product.js'></script>";
 }
-
 ?>
 </body>
 

@@ -11,7 +11,7 @@ class IndexController extends Controller
     {
         $this->layout = 'main';
         try {
-            echo $this->render('index', array('css' => 'index'));
+            echo $this->render('index');
         } catch (\Exception $exception) {
 
         }

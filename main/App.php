@@ -15,8 +15,6 @@ class App
 
     //Базовая дирректория
     const BASE_DIR = __DIR__ . DIRECTORY_SEPARATOR . '..';
-//    const $WEB_DIR = substr(__DIR__, strlen($_SERVER['DOCUMENT_ROOT']));
-
 
     /** @var App */
     public static $app;
