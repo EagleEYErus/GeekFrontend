@@ -24,6 +24,7 @@ class App
         self::$app->db = new DbComponent();
         self::$app->db->init();
         //Какие-то компоненты
+
         try {
             self::$app->request = new RequestComponent();
             self::$app->request->init();

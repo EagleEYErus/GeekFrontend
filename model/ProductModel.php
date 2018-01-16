@@ -2,12 +2,14 @@
 
 namespace model;
 
+use main\App;
 use main\Model;
 
 class ProductModel extends Model
 {
-    public function getProducts()
+    public function getProducts(): array
     {
-        return [];
+        $result = App::$app->db->execute("SELECT * FROM products");
+        return $result;
     }
 }
