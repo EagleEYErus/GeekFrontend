@@ -52,13 +52,13 @@
 </header>
 <nav class="navigation-bar">
     <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/product">Man</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Accesories</a></li>
-        <li><a href="#">Featured</a></li>
-        <li><a href="#">Hot deals</a></li>
+        <li><a href="/product">Women</a></li>
+        <li><a href="/product">Kids</a></li>
+        <li><a href="/product">Accesories</a></li>
+        <li><a href="/product">Featured</a></li>
+        <li><a href="/product">Hot deals</a></li>
     </ul>
 </nav>
 <!--innerView-->
@@ -102,7 +102,7 @@
             <li><a href="#">Women</a></li>
             <li><a href="#">Child</a></li>
             <li><a href="#">Apparel</a></li>
-            <li><a href="#">Browse All</a></li>
+            <li><a href="/product">Browse All</a></li>
         </ul>
     </nav>
 </div>
@@ -138,7 +138,9 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 <?php
-if (\components\RequestComponent::$controller === 'product') {
+if (\components\RequestComponent::$controller === 'index') {
+    echo "<script src='../../web/js/index.js'></script>";
+} else if (\components\RequestComponent::$controller === 'product') {
     echo "<script src='http://propeller.in/components/range-slider/js/wNumb.js'></script>
           <script src='http://propeller.in/components/range-slider/js/nouislider.js'></script>
           <script src='../../web/js/product.js'></script>";
